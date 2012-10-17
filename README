@@ -1,0 +1,15 @@
+qdatools
+--------
+
+My original Akuji the Demon translation was produced in January or February
+of 2003. These tools were written LONG after the fact in September of that
+year.
+
+The purpose is simple, one file extracts all the graphics from the QDA
+resource Akuji uses, the other makes a new QDA format file using the contents
+of whatever directory you give it.
+
+This could be handy if you want to customize the graphics in the game, or if
+you decide you want to waste your time producing a third (yes, third)
+translation of the game because mine and the other don't suck enough.
+

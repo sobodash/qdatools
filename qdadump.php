@@ -1,7 +1,20 @@
-#!/usr/bin/php
+#!/usr/bin/php -q
 <?php
+/*
 
-echo ("\nqdadump 1.0 - (c) 2003 Derrick Sobodash\n");
+qdadump
+
+Extracts the resources from a QDA package file.
+
+Version:   1.0
+Author:    Derrick Sobodash <derrick@sobodash.com>
+Copyright: (c) 2003, 2012 Derrick Sobodash
+Web site:  https://github.com/sobodash/qdatools/
+License:   BSD License <http://opensource.org/licenses/bsd-license.php>
+
+*/
+
+echo ("qdadump 1.0 (cli)\nCopyright (c) 2003, 2012 Derrick Sobodash\n");
 set_time_limit(6000000);
 
 if ($argc < 2) { DisplayOptions(); die; }
@@ -39,7 +52,7 @@ for($i=0; $i<$count; $i++) {
 echo ("All done!...\n\n");
 
 function DisplayOptions() {
-	echo ("Rips a QDA resource from Akuji the Demon\n  usage: qdadump [input file]\n\n");
+	echo ("Extracts a QDA resource.\n  usage: qdadump [input file]\n\n");
 }
 
 ?>

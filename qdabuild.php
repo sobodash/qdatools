@@ -1,7 +1,20 @@
-#!/usr/bin/php
+#!/usr/bin/php -q
 <?php
+/*
 
-echo ("\nqdabuild 1.0 (c) 2003 Derrick Sobodash\n");
+qdabuild
+
+Assembles a QDA package file using a directory of resources.
+
+Version:   1.0
+Author:    Derrick Sobodash <derrick@sobodash.com>
+Copyright: (c) 2003, 2012 Derrick Sobodash
+Web site:  https://github.com/sobodash/qdatools/
+License:   BSD License <http://opensource.org/licenses/bsd-license.php>
+
+*/
+
+echo ("qdabuild 1.0 (cli)\nCopyright (c) 2003, 2012 Derrick Sobodash\n");
 set_time_limit(6000000);
 
 if ($argc < 2) { DisplayOptions(); die; }
@@ -44,7 +57,7 @@ print "done!\n";
 echo ("All done!...\n\n");
 
 function DisplayOptions() {
-	echo ("Builds a QDA resource for Akuji the Demon\n  usage: qdabuild [input path]\n\n");
+	echo ("Builds a QDA resource.\n  usage: qdabuild [input path]\n\n");
 }
 
 ?>
